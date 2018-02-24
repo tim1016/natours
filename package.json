@@ -1,0 +1,28 @@
+{
+  "name": "inkant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tim1016/natours.git"
+  },
+  "author": "inkant",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tim1016/natours/issues"
+  },
+  "homepage": "https://github.com/tim1016/natours#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
