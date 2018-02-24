@@ -15,6 +15,7 @@ Project.scripts = `${Project.projectDir}/js`;
 Project.images = `${Project.projectDir}/img`;
 Project.icons = `${Project.images}/icons/**/*.svg`;
 Project.sprites = `${Project.images}/sprites`;
+Project.finalStyles = `${Project.cssLocation}/style.css`;
 
 
 
