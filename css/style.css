@@ -119,13 +119,12 @@ body {
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem); }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
 
 .btn::after {
   /*This is the initial state of the btn::after. All the transition properties are specified on the initial state*/
@@ -140,12 +139,11 @@ body {
   z-index: -1;
   transition: all 0.4s ease-out; }
 
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
