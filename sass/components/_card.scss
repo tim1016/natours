@@ -1,0 +1,85 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    
+
+    &__side{
+        //background-color: orangered ;
+        color: #FFF;
+        height: 50rem;
+        font-size: 2rem;
+        transition: all 0.8s ease;
+        position: relative;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+        &--front{
+            position: absolute;
+            //background-color: orangered;
+            backface-visibility: hidden;
+
+        }
+        
+        &--back{
+            position: absolute;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+
+            &--1{
+                background-image: linear-gradient(to right bottom,
+                $color-primary-light,  
+                $color-primary-dark)
+            }
+
+            &--2{
+                background-image: linear-gradient(to right bottom,
+                $color-secondary-light,  
+                $color-secondary-dark)
+            }
+
+            &--3{
+                background-image: linear-gradient(to right bottom,
+                $color-tertiary-light,  
+                $color-tertiary-dark)
+            }
+
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
+    }
+
+    &__picture{
+        background-size: cover;
+        height: 23rem; 
+        background-blend-mode: color-burn;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        
+        &--1{
+            background-image: linear-gradient(to right bottom,
+            $color-secondary-light,  
+            $color-secondary-dark), 
+            url(../../img/nat-5.jpg);
+        }
+        &--2{
+            background-image: url(../../img/nat-6.jpg);
+        }
+        &--3{
+            background-image: url(../../img/nat-7.jpg);
+        }
+
+    }
+
+
+    
+} 
