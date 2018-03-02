@@ -17,7 +17,7 @@
       opacity: 0; 
     } 
   }  
-  &:active {
+  &:active {  
     transform: translateY(-0.1rem); 
   }  
   &::after {
@@ -34,13 +34,25 @@
     transition: all 0.4s ease-out; 
   }
   &--white {
-    background-color: #fff;
+    background-color: $color-white ;
     color: #777; 
     
     &::after {
-      background-color: #fff; 
+      background-color:: $color-white; 
     }
   }  
+
+  &--color-primary {
+    background-color:: $color-primary;
+    color: $color-white; 
+    
+    &::after {
+      background-color:: $color-primary; 
+    }
+  }
+
+
+
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
