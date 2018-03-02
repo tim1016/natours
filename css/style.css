@@ -255,7 +255,7 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
@@ -281,7 +281,9 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../img/nat-6.jpg); }
     .card__picture--2 {
@@ -405,3 +407,7 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
