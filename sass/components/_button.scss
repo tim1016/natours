@@ -1,5 +1,7 @@
 .btn{
-  &:link, &:visited{
+  &,
+  &:link, 
+  &:visited{
     text-transform: uppercase; // This is the initial state of the btn. All the transition properties are specified on the initial state
     text-decoration: none;
     padding: 1.5rem 4.0rem;
@@ -8,6 +10,9 @@
     border-radius: 10rem;
     transition: all 0.2s ease-in;
     position: relative; 
+
+    // change for an actual button
+    border: none;
     }  
   &:hover {
     transform: translateY(-0.2rem);
@@ -17,7 +22,7 @@
       opacity: 0; 
     } 
   }  
-  &:active {  
+  &:active, &:focus {  
     transform: translateY(-0.1rem); 
   }  
   &::after {
