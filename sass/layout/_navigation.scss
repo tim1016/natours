@@ -137,6 +137,19 @@
         top: 1rem;
     }
 
+    &__checkbox:checked + &__button &__icon{
+        background-color: transparent;
+    }
 
+
+    &__checkbox:checked + &__button &__icon::before{
+        top: 0;
+        transform: rotate(135deg) scaleX(1.1 );
+    }
+
+    &__checkbox:checked + &__button &__icon::after{
+        top: 0;
+        transform: rotate(-135deg) scaleX(1.1);
+    }
 
 }
