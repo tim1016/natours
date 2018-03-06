@@ -1,25 +1,32 @@
 .popup{
     height: 100vh;
     width: 100%;
-    background-color: rgba($color-black, 0.8);
+    background-color: rgba($color-black, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 4000;
+    transition: all 0.3s;
 
     opacity: 0;
     visibility: hidden;
+
+
     
     &__content{
         //@include clearfix;
         background-color: $color-white;
         width: 75%;
-        //height: 50rem;
-        @include absCenter; 
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.5s 0.2s;
     }
 
     &__left{
@@ -33,6 +40,7 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        position: relative;
     }
 
     &__img{
@@ -59,6 +67,37 @@
         hyphens: auto;
     }
     
+    &__close{
+
+        &:link, &:visited{
+            font-size: 2.5rem;
+            text-decoration: none;
+            color: $color-gray-dark;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            line-height: 1;
+
+            top: 2rem;
+            right: 2rem;
+        }
+
+        &:hover{
+
+        }
+        
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translate(-50%, -50%);
+    }
         
     
 }
