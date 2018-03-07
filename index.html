@@ -74,16 +74,26 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
+
+
+                            <img srcset="img/nat-1.jpg 300w img/nat-1-large.jpg 1000w" alt="photo 1" sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px" class="composition__photo composition__photo--p1" src="img/nat-1.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w img/nat-2-large.jpg 1000w" alt="photo 2" sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px" class="composition__photo composition__photo--p2" src="img/nat-2.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w img/nat-3-large.jpg 1000w" alt="photo 3" sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px" class="composition__photo composition__photo--p3" src="img/nat-3.jpg">
+
+                            <!--
                             <img src="img/nat-1.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/nat-2.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
                             <img src="img/nat-3.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                            -->
                         </div>
                         
                     </div>
                 </div>
             </section>
 
-            <section class="section-features" id="#features">
+            <section class="section-features" id="features">
 
                 <div class="row">
                     <div class="col-1-of-4">
@@ -165,7 +175,7 @@
                                         <p class="card__price-box--value">$297</p> 
                                     </div>
 
-                                    <a href="#popup" class="btn btn--white btn--animated">Book Now</a>
+                                    <a href="#popup" class="btn btn--white btn--animated u-margin-bottom-medium">Book Now</a>
                                 </div>
                             </div>    
                         </div>
@@ -349,8 +359,12 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__logo-box u-margin-bottom-medium">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" media-"(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+                </picture>
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -387,7 +401,7 @@
                     <h2 class="heading-secondary u-margin-bottom-small">Start Booking now</h2>
                     <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
                     <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ducimus deleniti eum vero cupiditate mollitia. Vero eligendi ab totam, ut minima tempore rem adipisci mollitia tenetur veritatis esse obcaecati autem expedita fuga ad explicabo nisi repellat consequatur officiis pariatur sit dolorem voluptatibus animi? Accusamus laudantium ratione saepe, quibusdam atque error esse, cumque debitis quae veniam animi? Cupiditate aperiam sequi eos facilis repellendus ab eius vel sunt, commodi dignissimos! Blanditiis minus itaque deserunt maiores nihil debitis quibusdam qui similique voluptates aspernatur sapiente sed hic neque at ad, aperiam quas dolor unde impedit deleniti voluptatum est harum pariatur! Tempore possimus iste eum?</p>
-                    <a href="#" class="btn btn--color-primary btn--animated">Book Now</a>
+                    <a href="#" class="btn btn--color-primary btn--animated btn--center">Book Now</a>
 
                 </div>
             </div>

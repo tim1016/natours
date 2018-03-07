@@ -160,4 +160,51 @@
         }
 
     }
+
+    @include respond(tab-port){
+        height: auto;
+
+        &__side{
+            //background-color: orangered ;
+            height: auto;
+            position: relative;
+            border-radius: 3px;
+            font-weight: normal;
+            &--back{
+                display: block;
+                transform: rotateY(0deg);
+                clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+            }
+        }
+
+        &:hover &__side--front{
+            transform: rotateY(0deg);
+        }
+
+        &:hover &__side--back{
+            transform: rotateY(0deg);
+        }
+
+
+        &__cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translate(0);
+            text-align: center;
+        }
+
+        &__price-box{
+            color: $color-white;
+            &--only{
+                padding-top: 4rem;
+                font-size: 1.5rem;
+            }
+            &--value{
+                font-size: 6rem;
+
+            }
+        }
+    }
 } 

@@ -45,7 +45,12 @@
     &::after {
       background-color:: $color-white; 
     }
-  }  
+  }
+  
+  &--center{
+    margin-left:  auto;
+    margin-right:  auto;
+  }
 
   &--color-primary {
     background-color:: $color-primary;
